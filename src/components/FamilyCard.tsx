@@ -137,30 +137,28 @@ export const FamilyCard = ({ member, relations, expanded = false, onAddRelation 
             />
           )}
 
-          {!isExpanded && (
-            <div className="space-y-2">
-              <AddFamilyMember
-                existingMember={member}
-                relationship="spouse"
-                onAdd={handleAddRelation("spouse")}
-              />
-              <AddFamilyMember
-                existingMember={member}
-                relationship="child"
-                onAdd={handleAddRelation("child")}
-              />
-              <AddFamilyMember
-                existingMember={member}
-                relationship="parent"
-                onAdd={handleAddRelation("parent")}
-              />
-              <AddFamilyMember
-                existingMember={member}
-                relationship="sibling"
-                onAdd={handleAddRelation("sibling")}
-              />
-            </div>
-          )}
+          <div className="space-y-2">
+            <AddFamilyMember
+              existingMember={member}
+              relationship="spouse"
+              onAdd={handleAddRelation("spouse")}
+            />
+            <AddFamilyMember
+              existingMember={member}
+              relationship="child"
+              onAdd={handleAddRelation("child")}
+            />
+            <AddFamilyMember
+              existingMember={member}
+              relationship="parent"
+              onAdd={handleAddRelation("parent")}
+            />
+            <AddFamilyMember
+              existingMember={member}
+              relationship="sibling"
+              onAdd={handleAddRelation("sibling")}
+            />
+          </div>
         </CardContent>
       )}
     </Card>
